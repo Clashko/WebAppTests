@@ -42,9 +42,7 @@ public class DefensePage extends AbstractPage {
 
     }
     public boolean isBuildDef() {
-        boolean isBuildBool=false;
-        if(driver.findElement(By.className("shipAllCountdown")).isEnabled()) isBuildBool=true;
-        return isBuildBool;
+        return driver.findElement(By.className("shipAllCountdown")).isEnabled();
 
     }
 }

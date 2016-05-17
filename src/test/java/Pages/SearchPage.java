@@ -52,9 +52,7 @@ public class SearchPage extends AbstractPage{
         driver.findElement(By.id("allyNameField")).sendKeys(Keys.ENTER);
     }
     public boolean isCreated(){
-        boolean isCreate=false;
-        isCreate=driver.findElement(By.linkText("Страница альянса")).isDisplayed();
-        return isCreate;
+        return driver.findElement(By.linkText("Страница альянса")).isDisplayed();
     }
 }
 

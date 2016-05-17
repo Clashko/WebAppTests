@@ -56,9 +56,6 @@ public class ResearchPage extends AbstractPage{
     }
 
     public boolean isResearching() {
-        boolean isResearchBool=false;
-        if(driver.findElement(By.id("researchCountdown")).isEnabled()) isResearchBool=true;
-        return isResearchBool;
-
+        return driver.findElement(By.id("researchCountdown")).isEnabled();
     }
 }

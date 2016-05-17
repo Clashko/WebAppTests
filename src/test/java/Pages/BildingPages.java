@@ -58,8 +58,6 @@ public class BildingPages  extends AbstractPage {
     }
 
     public boolean isBuild(){
-        boolean isBuildBool=false;
-        if(driver.findElement(By.id("Countdown")).isEnabled()) isBuildBool=true;
-        return isBuildBool;
+        return driver.findElement(By.id("Countdown")).isEnabled();
     }
 }
