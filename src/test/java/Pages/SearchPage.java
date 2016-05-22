@@ -36,9 +36,9 @@ public class SearchPage extends AbstractPage{
         boolean isFind=false;
         try{
             if(category.equals("user") || category.equals("planet")){
-                if(driver.findElement(By.className("userName")).isDisplayed()) isFind=true;
+                isFind=driver.findElement(By.className("userName")).isDisplayed();
             }
-            else if(driver.findElement(By.className("allyTag")).isDisplayed()) isFind=true;
+            else isFind=driver.findElement(By.className("allyTag")).isDisplayed();
 
         }catch (Exception e){
             isFind=false;

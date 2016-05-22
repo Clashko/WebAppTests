@@ -54,6 +54,6 @@ public class LoginPage extends AbstractPage{
     }
 
     public boolean isLogOut(){
-        return buttonSubmit.isDisplayed();
+        return  buttonSubmit.isDisplayed();
     }
 }

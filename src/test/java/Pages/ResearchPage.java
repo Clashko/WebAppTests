@@ -57,5 +57,6 @@ public class ResearchPage extends AbstractPage{
 
     public boolean isResearching() {
         return driver.findElement(By.id("researchCountdown")).isEnabled();
+
     }
 }

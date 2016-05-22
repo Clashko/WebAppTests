@@ -9,7 +9,7 @@ public class AutoTests {
     private final String USERNAME = "Clashko";
     private final String PASSWORD = "3d0feefcwrxe";
 
-    private final String resources = "Энергия";
+    private final String resources = "Дейтерий";
     private final String fabric = "Верфь";
     private final String research = "Броня";
     private final String [] defense = {"РакетнаяУстановка","2"};

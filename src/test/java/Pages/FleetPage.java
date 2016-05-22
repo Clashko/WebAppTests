@@ -51,9 +51,7 @@ public class FleetPage extends AbstractPage {
         driver.findElement(By.className("build-it")).click();
     }
     public boolean isBuildFleet() {
-        boolean isBuildBool=false;
-        if(driver.findElement(By.className("shipAllCountdown")).isEnabled()) isBuildBool=true;
-        return isBuildBool;
+        return driver.findElement(By.className("shipAllCountdown")).isEnabled();
     }
 
     public void sendAllFleetToMine(String [] coords){
@@ -76,7 +74,7 @@ public class FleetPage extends AbstractPage {
         driver.findElement(By.linkText("Флот")).click();
         driver.findElement(By.id("movements")).click();
         try {
-            if(driver.findElement(By.linkText(coords)).isDisplayed())isSend=true;
+            isSend=driver.findElement(By.linkText(coords)).isDisplayed();
         }catch (Exception e){
             isSend=false;
         }
