@@ -11,8 +11,8 @@ public class Steps {
     public void initBrowser()
     {
         driver = new FirefoxDriver();
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(160, TimeUnit.SECONDS);
     }
     public void closeDriver()
     {
